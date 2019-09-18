@@ -12,5 +12,6 @@
 </head>
 <body>
     <h1>跳转成功</h1>
+    <h2>欢迎您：</h2>${users}
 </body>
 </html>
