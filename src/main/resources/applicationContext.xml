@@ -13,9 +13,9 @@
 	   http://www.springframework.org/schema/tx
 	   http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <!-- 配置扫描器，spring管理的是service和dao层的注解，controller注解交给springmvc管理 -->
+    <!-- 配置扫描器，spring管理的是service层和dao层的注解，controller注解交给springmvc管理 -->
     <context:component-scan base-package="com.santiago">
-        <!-- 配置要忽略的注解 -->
+        <!-- controller不由spring管理，所以要忽略掉controller的注解 -->
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
