@@ -14,9 +14,6 @@
 <head>
     <title>注册</title>
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
-    <!--
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        -->
     <link rel="stylesheet" type="text/css" href="<c:url value="${pageContext.request.contextPath}/css/css.css" />"/>
     <link rel="stylesheet" type="text/css"
           href="<c:url value='${pageContext.request.contextPath}/css/user/register.css'/>">
@@ -41,64 +38,89 @@
                 <table>
                     <tr>
                         <td class="tdLabel">用户名：</td>
-                        <td class="tdInput"><input type="text"
-                                                   name="loginname" id="loginname"
-                                                   class="input" value="${form.loginname }" /></td>
-                        <td class="tdError"><label
-                                class="labelError" id="loginnameError">${errors.loginname }</label>
+                        <td class="tdInput">
+                            <input type="text" name="loginname"
+                                   id="loginname" class="input"
+                                   value="${form.loginname }" />
+                        </td>
+                        <td class="tdError">
+                            <label class="labelError" id="loginnameError">${errors.loginname }</label>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdLabel">登录密码：</td>
-                        <td class="tdInput"><input type="password"
-                                                   name="loginpass" id="loginpass"
-                                                   class="input" value="${form.loginpass }" /></td>
-                        <td class="tdError"><label
-                                class="labelError" id="loginpassError">${errors.loginpass }</label>
+                        <td class="tdInput">
+                            <input type="password"
+                                   name="loginpass"
+                                   id="loginpass"
+                                   class="input"
+                                   value="${form.loginpass }" />
+                        </td>
+                        <td class="tdError">
+                            <label class="labelError"
+                                   id="loginpassError">${errors.loginpass }
+                            </label>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdLabel">确认密码：</td>
-                        <td class="tdInput"><input type="password"
-                                                   name="reloginpass" id="reloginpass"
-                                                   class="input" value="${form.reloginpass }" /></td>
-                        <td class="tdError"><label
-                                class="labelError" id="reloginpassError">${errors.reloginpass }</label>
+                        <td class="tdInput">
+                            <input type="password"
+                                   name="reloginpass"
+                                   id="reloginpass"
+                                   class="input"
+                                   value="${form.reloginpass }" />
+                        </td>
+                        <td class="tdError">
+                            <label class="labelError"
+                                   id="reloginpassError">${errors.reloginpass }
+                            </label>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdLabel">Email：</td>
-                        <td class="tdInput"><input type="text"
-                                                   name="email" id="email" class="input"
-                                                   value="${form.email }" /></td>
-                        <td class="tdError"><label
-                                class="labelError" id="emailError">${errors.email }</label>
+                        <td class="tdInput">
+                            <input type="text"
+                                   name="email"
+                                   id="email"
+                                   class="input"
+                                   value="${form.email }" />
+                        </td>
+                        <td class="tdError">
+                            <label class="labelError"
+                                   id="emailError">${errors.email }
+                            </label>
                         </td>
                     </tr>
                     <tr>
                         <td class="tdLabel">图形验证码：</td>
-                        <td class="tdInput"><input type="text"
-                                                   name="verifyCode" id="verifyCode"
-                                                   class="input" value="${form.verifyCode }" /></td>
-                        <td class="tdError"><label
-                                class="labelError" id="verifyCodeError">${errors.verifyCode }</label>
+                        <td class="tdInput">
+                            <input type="text"
+                                   name="verifyCode" id="verifyCode"
+                                   class="input" value="${form.verifyCode }" />
+                        </td>
+                        <td class="tdError">
+                            <label class="labelError"
+                                   id="verifyCodeError">${errors.verifyCode }
+                            </label>
                         </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><span class="verifyCodeImg"><img alt=""
-                                id="vCode" width="100" title="点击更换" src="/SSMProject/verifyCode"
-                                onclick="this.setAttribute('src','/SSMProject/verifyCode?'+Math.random());"/></span></td>
+                        <td>
+                            <span class="verifyCodeImg">
+                                <img alt="验证码" id="vCode" width="100" title="点击更换"
+                                     src="${pageContext.request.contextPath}/verifyCode"
+                                     onclick="this.setAttribute('src','${pageContext.request.contextPath}/verifyCode?'+Math.random());"/>
+                            </span>
+                        </td>
                         <td></td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><%-- <input type="image"
-                                src="<c:url value='/images/regist1.jpg'/>"
-                                id="submit" /> --%>
+                        <td>
                             <input type="submit" id="submitBtn" value="" class="btnRegist">
                         </td>
-<%--                        <td><a class="alreadyHave" href="<c:url value='login.jsp'/>">已有账号？</a></td>--%>
                         <td>
                             <a id="gotoLogin" class="alreadyHave" href="${pageContext.request.contextPath}/user/gotoLogin">已有账号？</a>
                         </td>

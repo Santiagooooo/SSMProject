@@ -57,5 +57,13 @@
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>VerifyCode</servlet-name>
+    <servlet-class>com.santiago.util.verifycode.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifyCode</servlet-name>
+    <url-pattern>/verifyCode</url-pattern>
+  </servlet-mapping>
 
 </web-app>

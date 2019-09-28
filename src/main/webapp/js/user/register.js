@@ -67,7 +67,7 @@ function validateLoginname(){
         return false;
     }
     $.ajax({
-        url:"/yosebook-ssm/user/ajaxValidateLoginname.do",
+        url:"\$\{pageContext.request.contextPath\}/user/ajaxValidateLoginname.do",
         data:{loginname:value},
         type:"POST",
         dataType:"json",
@@ -127,7 +127,7 @@ function validateEmail(){
         return false;
     }
     $.ajax({
-        url:"/yosebook-ssm/user/ajaxValidateEmail.do",
+        url:"\$\{pageContext.request.contextPath\}/user/ajaxValidateEmail.do",
         data:{email:value},
         type:"POST",
         dataType:"json",
@@ -157,7 +157,7 @@ function validateVerifyCode(){
         return false;
     }
     $.ajax({
-        url:"/yosebook-ssm/user/ajaxValidateVerifyCode.do",
+        url:"\$\{pageContext.request.contextPath\}/user/ajaxValidateVerifyCode.do",
         data:{verifyCode:value},
         type:"POST",
         dataType:"json",
@@ -173,24 +173,3 @@ function validateVerifyCode(){
     });
     return true;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

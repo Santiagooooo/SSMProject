@@ -65,8 +65,8 @@
                     <td>
                         <input type="text" class="txtVerifyCode input" placeholder="验证码" name="verifyCode"
                                id="verifyCode" value="${user.verifyCode }">
-                        <img id="vCode" src="/SSMProject/verifyCode" title="点击更换"
-                             onclick="this.setAttribute('src','/SSMProject/verifyCode?'+Math.random());"/>
+                        <img id="vCode" src="${pageContext.request.contextPath}/verifyCode" title="点击更换"
+                             onclick="this.setAttribute('src','${pageContext.request.contextPath}/verifyCode?'+Math.random());"/>
                     </td>
                 </tr>
                 <tr>
@@ -90,8 +90,6 @@
                     <td>
                         <a id="gotoRegister" class="alreadyHave" href="${pageContext.request.contextPath}/user/gotoRegister">免费注册</a>
 
-<%--                        <a href="<c:url value='/WEB-INF/view/user/register.jsp'/>"><input type="button" id="btnRegist"--%>
-<%--                                                                                          value="免费注册&gt;&gt;"></a>--%>
                     </td>
                 </tr>
             </table>
