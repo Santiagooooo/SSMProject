@@ -13,7 +13,7 @@
     <title> 登录 </title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css"
-          href="<c:url value='${pageContext.request.contextPath}/css/user/login.css'/>">
+          href="${pageContext.request.contextPath}/css/user/login.css">
     <script type="text/javascript"
             src="<c:url value='${pageContext.request.contextPath}/jquery/jquery-1.5.1.js'/>"></script>
     <script src="<c:url value='${pageContext.request.contextPath}/js/common.js'/>"></script>

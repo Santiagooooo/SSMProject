@@ -18,7 +18,8 @@
   <!-- 设置加载类路径的配置文件-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:applicationContext.xml</param-value>
+<!--    <param-value>classpath:applicationContext.xml</param-value>-->
+    <param-value>classpath:spring-*.xml</param-value>
   </context-param>
 
   <!-- 配置过滤器，解决中文乱码问题-->
@@ -48,7 +49,7 @@
     <!-- 加载 springmvc.xml -->
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:springmvc.xml</param-value>
+      <param-value>classpath:spring-mvc.xml</param-value>
     </init-param>
     <!-- 启动服务器，加载该servlet -->
     <load-on-startup>1</load-on-startup>

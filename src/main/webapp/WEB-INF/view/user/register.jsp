@@ -16,7 +16,7 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <link rel="stylesheet" type="text/css" href="<c:url value="${pageContext.request.contextPath}/css/css.css" />"/>
     <link rel="stylesheet" type="text/css"
-          href="<c:url value='${pageContext.request.contextPath}/css/user/register.css'/>">
+          href="${pageContext.request.contextPath}/css/user/register.css">
     <script type="text/javascript"
             src="<c:url value='${pageContext.request.contextPath}/jquery/jquery-2.1.1.js'/>"></script>
     <script type="text/javascript" src="<c:url value='${pageContext.request.contextPath}/js/common.js'/>"></script>

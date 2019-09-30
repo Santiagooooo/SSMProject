@@ -10,15 +10,14 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <!-- 扫描Controller的注解-->
+    <context:component-scan base-package="com.santiago.controller"/>
+
     <!-- 开启对SpringMVC注解的支持 -->
     <mvc:annotation-driven/>
 
-    <!-- 扫描Controller的注解-->
-    <context:component-scan base-package="com.santiago">
-
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
-    </context:component-scan>
+    <!-- 静态资源默认servlet配置 -->
+    <mvc:default-servlet-handler/>
 
     <!-- 配置视图解析器 -->
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
