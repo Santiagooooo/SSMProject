@@ -125,7 +125,7 @@ public class UserController{
         return errors;
     }
 
-    @RequestMapping("/regist.do")
+    @RequestMapping("/register")
     public String regist(User formUser,HttpSession session,ModelMap map)
             throws Exception{
         Map<String,String> errors =

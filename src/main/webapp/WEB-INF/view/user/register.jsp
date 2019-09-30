@@ -34,7 +34,7 @@
             <span class="spanTitle">新用户注册</span>
         </div>
         <div class="divCenter">
-            <form action="<c:url value='/${pageContext.request.contextPath}/user/register.do'/>" method="post" id="registForm">
+            <form action="${pageContext.request.contextPath}/user/register" method="post" id="registForm">
                 <table>
                     <tr>
                         <td class="tdLabel">用户名：</td>
