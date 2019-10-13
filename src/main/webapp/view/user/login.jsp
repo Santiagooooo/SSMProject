@@ -15,9 +15,9 @@
     <link rel="stylesheet" type="text/css"
           href="${pageContext.request.contextPath}/css/user/login.css">
     <script type="text/javascript"
-            src="<c:url value='${pageContext.request.contextPath}/jquery/jquery-1.5.1.js'/>"></script>
-    <script src="<c:url value='${pageContext.request.contextPath}/js/common.js'/>"></script>
-    <script src="<c:url value='${pageContext.request.contextPath}/js/user/login.js'/>"></script>
+            src="${pageContext.request.contextPath}/jquery/jquery-1.5.1.js"></script>
+    <script src="${pageContext.request.contextPath}/js/common.js"></script>
+    <script src="${pageContext.request.contextPath}/js/user/login.js"></script>
     <script type="text/javascript">
         $(function () {
             var loginname = window.decodeURI("${cookie.loginname.value}");
@@ -35,7 +35,7 @@
 </header>
 <section>
     <div id="content">
-        <form target="_top" action="<c:url value='/${pageContext.request.contextPath}/user/login.do'/>" method="post"
+        <form target="_top" action="${pageContext.request.contextPath}/user/login.do" method="post"
               id="loginForm">
             <table>
                 <tr>
@@ -83,7 +83,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="submit" id="btnLogin" value="">
+                        <input type="submit" id="btnLogin" value="" class="btnLogin">
                     </td>
                 </tr>
                 <tr>

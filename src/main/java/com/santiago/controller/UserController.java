@@ -92,7 +92,7 @@ public class UserController{
                 Cookie cookie = new Cookie("loginname",loginname);
                 cookie.setMaxAge(60*60*24*10);
                 response.addCookie(cookie);
-                return "/index";
+                return "main";
             }
         }
     }

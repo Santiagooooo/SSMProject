@@ -91,13 +91,13 @@ table {
     width: 120px;
 }
 .btnRegist{
-    width: 244px;
-    height: 34px;
-    border:0;
-    background: url('/images/regist1.jpg') no-repeat;
-}
+     width: 244px;
+     height: 34px;
+     border:0;
+     background: url('../../images/regist1.jpg') no-repeat;
+ }
 .btnRegist:hover{
-    background: url('/images/regist2.jpg') no-repeat;
+    background: url('../../images/regist2.jpg') no-repeat;
     cursor:pointer;
 }
 header img.welcome_reg {

@@ -28,12 +28,15 @@
 		background-color: #efeae5;
 		border: 5px solid #efeae5;
         border-radius: 10px 10px 0px 0px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.divContent {
 		width: 900px;
 		height: 230px;
 		border: 5px solid #efeae5;
-		margin-right:20px; 
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom:20px;
         border-radius: 0 0 10px 10px;
 	}
@@ -75,7 +78,7 @@ a:hover {color:#FF6600; text-decoration: underline;}
 		<br/>
 		<br/>
 		<br/>
-		<span style="margin-left: 50px;"><a target="_top" href="<c:url value='/user/login.jsp'/>">去登录</a></span>
+		<span style="margin-left: 50px;"><a target="_top" href="${pageContext.request.contextPath}/user/gotoLogin">去登录</a></span>
 		<span style="margin-left: 50px;"><a target="_top" href="<c:url value='/index.jsp'/>">返回主页</a></span>
 	  </div>
 	</div>
