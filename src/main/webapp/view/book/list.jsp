@@ -27,7 +27,7 @@
         <li>
             <div class="inner">
                 <a class="pic" href="${pageContext.request.contextPath}/book/load.do?bid=${book.bid}">
-                    <img src="<c:url value='/${book.image_b}'/>" border="0" />
+                    <img src="${pageContext.request.contextPath}/images/${book.image_b}" border="0" />
                 </a>
                 <p class="price">
                     <span class="price_n">&yen;${book.currPrice }</span> <span
@@ -41,10 +41,10 @@
                     </a>
                 </p>
                 <%-- url标签会自动对参数进行url编码 --%>
-                <c:url value="${pageContext.request.contextPath}/book/findByAuthor.do" var="authorUrl">
+                <c:url value="/book/findByAuthor.do" var="authorUrl">
                     <c:param name="author" value="${book.author }"></c:param>
                 </c:url>
-                <c:url value="${pageContext.request.contextPath}/book/findByPress.do" var="pressUrl">
+                <c:url value="/book/findByPress.do" var="pressUrl">
                     <c:param name="press" value="${book.press }"></c:param>
                 </c:url>
                 <p>

@@ -25,7 +25,7 @@
     <div class="divBookName" style="margin-left: 35px;">${book.bname }</div>
     <div>
         <img align="top" style="margin-left:35px; margin-top:15px;"
-            src="<c:url value='/${book.image_w }'/>"
+            src="${pageContext.request.contextPath}/images/${book.image_w }"
             class="img_image_w" />
         <div class="divBookDesc">
             <ul>
