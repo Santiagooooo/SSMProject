@@ -43,7 +43,7 @@ public class UserController{
     @RequestMapping("/quit.do")
     public String quit(HttpServletRequest request){
         request.getSession().invalidate();
-        return "redirect:user/login.jsp";
+        return "redirect:login.jsp";
     }
     @RequestMapping("/updatePassword.do")
     public String updatePassword(User formUser, HttpServletRequest request){

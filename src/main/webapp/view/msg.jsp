@@ -79,7 +79,7 @@ a:hover {color:#FF6600; text-decoration: underline;}
 		<br/>
 		<br/>
 		<span style="margin-left: 50px;"><a target="_top" href="${pageContext.request.contextPath}/user/gotoLogin">去登录</a></span>
-		<span style="margin-left: 50px;"><a target="_top" href="<c:url value='/index.jsp'/>">返回主页</a></span>
+		<span style="margin-left: 50px;"><a target="_top" href="${pageContext.request.contextPath}/view/main.jsp">返回主页</a></span>
 	  </div>
 	</div>
 </div>

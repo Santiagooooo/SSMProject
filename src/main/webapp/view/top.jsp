@@ -50,7 +50,7 @@ a:hover {
         &nbsp;&nbsp;&nbsp;&nbsp;
              优思会员：${sessionUser.loginname }&nbsp;&nbsp;|&nbsp;&nbsp; 
             <a href="${pageContext.request.contextPath}/cartItem/myCart.do" target="body">我的购物车</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="${pageContext.request.contextPath}/orderServlet?method=myOrders" target="body">我的订单</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="${pageContext.request.contextPath}/order/myOrders.do" target="body">我的订单</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="user/pwd.jsp" target="body">修改密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="${pageContext.request.contextPath}/user/quit.do" target="_parent">退出</a>
         </c:otherwise>
